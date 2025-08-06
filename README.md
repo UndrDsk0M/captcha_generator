@@ -23,9 +23,9 @@ else :
 ## Instalation
 1. `Pip install` not available yet!
 2. 
-    `git clone https://github.com/UndrDsk0M/captcha_generator`
-    `pip install -r requirments.txt`
-    `python3 captcha_generator.py` or use it as `from capcha_generator import *`
+    + `git clone https://github.com/UndrDsk0M/captcha_generator`
+    + `pip install -r requirments.txt`
+    + `python3 captcha_generator.py` or use it as `from capcha_generator import *`
 
 
 
@@ -40,8 +40,12 @@ else :
 
 
 
-# example1
-![image](https://github.com/user-attachments/assets/41f91e05-a488-4ee9-bffb-ed45c68efe97)
+# demo: 
+<img width="500" height="200" alt="tmp7929o9wm" src="https://github.com/user-attachments/assets/c3394a3c-a819-4398-b729-3f9d83d450fa" />
+<img width="500" height="200" alt="tmpqcdr0em7" src="https://github.com/user-attachments/assets/dd04485f-86d2-47f1-b0ee-7251a3c67d61" />
+<img width="500" height="200" alt="tmpe99ew9rc" src="https://github.com/user-attachments/assets/4b456d54-333f-4d28-8c20-c0bcbe6c55aa" />
+<img width="500" height="200" alt="tmpgc958lbk" src="https://github.com/user-attachments/assets/741c8887-77a9-40c2-82ea-f038bae16092" />
 
-# exmple2
-![image](https://github.com/user-attachments/assets/a482c014-ce86-4cb5-a756-cd2e0cb1b05a)
+
+
+
