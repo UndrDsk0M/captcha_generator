@@ -1,6 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
-import logging
+import importlib.resources
 from os import getcwd
+import logging
 import random
 import string
 
@@ -44,7 +45,14 @@ def randomText(length:int=6, number:bool=True, lowercase_char:bool=True,
     random_text:str = ""
     for char in chars :
         random_text += char 
-    return random_text    
+    return random_text  
+  
+
+
+def __getpath__(name: str):
+    # name example: "FontA.ttf"
+    with importlib.resources.path("captchaSaz.fonts", name) as path:
+        return str(path)
 
 def generate(text:str="randomText", width:int=500, height:int=200,
              incld_circle:bool=True, incld_line:bool=True, random_fcolor:bool=False) -> (object, str):
@@ -92,22 +100,23 @@ def generate(text:str="randomText", width:int=500, height:int=200,
             color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
             border = random.randint(1, 10)
             edit_image.line(shape, fill=color, width=border)
-    fonts = ['fonts/Carmitta.ttf', 'fonts/Lemon Shake Shake.ttf', 'fonts/Meditative.ttf', 'fonts/Pusing Kali.ttf', 'fonts/Southport.ttf']
+    fonts = ['Carmitta.ttf', 'Lemon Shake Shake.ttf', 'Meditative.ttf', 'Pusing Kali.ttf', 'Southport.ttf']
 
     between_space = width / (len(text) + 1)
     x_index = between_space
-    y_index = height / 2
+    y_index = (height / 2) - 20
     for char in text:
         # setting the text in image 
+        random_y = y_index + random.randint(-20, 20)
         font_name = random.choice(fonts)
-        font_path = (f"{main_dir}/{font_name}") if (__name__=='__main__') else font_name
+        font_path = __getpath__(font_name)
         logging.info(font_path)
         font = ImageFont.truetype(font_path, width/10) 
         if random_fcolor:
             color = (0, 0, 0) if random.choice([True, False]) else (255, 255, 255) 
         else :
             color = (0, 0, 0)
-        edit_image.text((x_index, y_index), char, fill=color, font=font)
+        edit_image.text((x_index, random_y), char, fill=color, font=font)
         x_index += between_space
 
     return image, text

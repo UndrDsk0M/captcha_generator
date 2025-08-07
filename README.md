@@ -1,4 +1,12 @@
-# captcha generator
+# captchaSaz (generator)
+<br>
+<div align="center">
+  <img src="https://img.shields.io/pypi/l/captchaSaz">
+  <img src="https://img.shields.io/badge/_auth-undrdskm-blue">
+  <img src="https://img.shields.io/pypi/dt/captchaSaz">
+  <img src="https://img.shields.io/pypi/dw/captchaSaz">
+  <img src="https://img.shields.io/pypi/pyversions/captchaSaz">
+</div>
 <hr>
 this is a captcha generator made with pillow
 it has three function in current version:
@@ -8,6 +16,8 @@ it has three function in current version:
 
 
 ```python
+from captchaSaz import *
+
 captcha_image, captcha_text = generate()
 captcha_image.show()
 client_ = input('Enter captcha: ')
@@ -21,7 +31,10 @@ else :
 <hr>
 
 ## Instalation
-1. `Pip install` not available yet!
+1. + `pip install captchaSaz==2.0.4` is available now!
+   + `from captchaSaz import *`
+   + `generate()`
+
 2. 
     + `git clone https://github.com/UndrDsk0M/captcha_generator`
     + `pip install -r requirments.txt`
@@ -32,6 +45,8 @@ else :
 <hr>
 
 - ## Update:
++ now available in pypi packeges!
++ path issue fixed
 + Got inline documents!
 + check function added!
 + rewriting with typing rules
@@ -45,7 +60,3 @@ else :
 <img width="500" height="200" alt="tmpqcdr0em7" src="https://github.com/user-attachments/assets/dd04485f-86d2-47f1-b0ee-7251a3c67d61" />
 <img width="500" height="200" alt="tmpe99ew9rc" src="https://github.com/user-attachments/assets/4b456d54-333f-4d28-8c20-c0bcbe6c55aa" />
 <img width="500" height="200" alt="tmpgc958lbk" src="https://github.com/user-attachments/assets/741c8887-77a9-40c2-82ea-f038bae16092" />
-
-
-
-
