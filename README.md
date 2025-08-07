@@ -3,7 +3,6 @@
 <div align="center">
   <img src="https://img.shields.io/pypi/l/captchaSaz">
   <img src="https://img.shields.io/badge/_auth-undrdskm-blue">
-  <img src="https://img.shields.io/pypi/dt/captchaSaz">
   <img src="https://img.shields.io/pypi/dw/captchaSaz">
   <img src="https://img.shields.io/pypi/pyversions/captchaSaz">
 </div>
